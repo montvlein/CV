@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Montivero</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+<body>
+    <header class="header-bg-color d-flex flex-column align-items-center justify-around m-20">
+        <h1 class="text-center text-uppercase">Curriculum Vitae <br><span>Montivero Leonel</span></h1>
+    </header>
+    <main class="container position-relative">
+        <fieldset class="d-flex justify-evenly flex-wrap gap-2">
+            <legend class="text-uppercase">Historia de vida</legend>
+            <input type="radio" name="menu" id="num0">
+            <label for="num0" id="for0" class="dedo width">
+                <span class="for carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Datos personales</span></label>
+            
+            <input type="radio" name="menu" id="num1">
+            <label for="num1" id="for1" class="dedo width">
+                <span class="carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Experiencia laboral</span></label>
+
+            <input type="radio" name="menu" id="num2">
+            <label for="num2" id="for2" class="dedo width">
+                <span class="carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Experiencia academica</span></label>
+
+            <input type="radio" name="menu" id="num3">
+            <label for="num3" id="for3" class="dedo width">
+                <span class="carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Redes y contacto</span></label>
+
+                <div id="bienvenida" class="vista">
+                    <p>Hola, bienvenido a mi cv...</p>
+                    <p>Seleccionar una tarjeta para leer su contenido</p>
+                </div>
+                <section id="datos" class="vista">
+                    <div>
+                        <h2 class="text-uppercase">Datos personales</h2>
+                        <dl>
+                            <dt>Residencia</dt>
+                            <dd>Buenos Aires - Argentina</dd>
+
+                            <dt>Nacionalidad</dt>
+                            <dd>Argentina</dd>
+
+                            <dt>Año de nacimiento</dt>
+                            <dd>1990</dd>
+                        </dl>
+                    </div>
+                </section>
+                <section id="laboral" class="vista">
+                    <h2 class="text-uppercase">Experiencia laboral</h2>
+                    <p>Si, desde hace varios años, en diferentes lugares</p>
+                </section>
+                <section id="academia" class="vista">
+                    <h2 class="text-uppercase">Experiencia academica</h2>
+                    <dl>
+                        <dt>Certified Tech Developer</dt>
+                        <dd>Cursando la carrera Full Stack en Digital House</dd>
+                    </dl>
+                </section>
+                <section id="contacto" class="vista">
+                    <h2 class="text-uppercase">Contacto</h2>
+                    <dl>
+                        <dt>Email</dt>
+                        <dd>montvlein@gmail.com</dd>
+
+                        <dt>Repositorio</dt>
+                        <dd><a href="https://github.com/montvlein" target="_blank"
+                            class="d-flex align-items-center color-white">
+                            <img src="http://www.pngall.com/wp-content/uploads/2016/04/Github-Free-PNG-Image.png" alt="GitHub" 
+                            class="icono">Github</a></dd>
+                    </dl>
+                </section>
+        </fieldset>
+    </main>
+</body>
+</html>
