@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import 'colores';
+@import 'animaciones';
+
+body {
+    background-color: $primario-color;
+    font-family: 'Uchen', serif;
+
+    header {
+        margin: 1.5rem;
+        min-height: 25vh;
+        h1 {
+            color: $cuaternario-color;
+        }
+    }
+
+}
+
+/* nav */
+
+.carta {
+    background-color: $secundario-color;
+    border: 10px solid $terciario-color;
+    border-radius: 5px;
+    font-weight: 900;
+    height: 15rem;
+    overflow: hidden;
+    width: 10rem;
+    transform-origin: center;
+}
+
+.width {
+    min-width: 20%;
+    max-width: 100%;
+}
+
+.dedo {
+    &::after {
+        color: $terciario-color;
+        content: "\f25a";
+        display: inline-block;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        visibility: hidden;
+    }
+    &:hover::after {
+        visibility: visible;
+    }
+}
+
+/* input */
+input {
+    display: none;
+}
+
+#num0:checked+#for0 {
+    color: $terciario-color;
+}
+
+#num1:checked+#for1 {
+    color: $terciario-color;
+}
+
+#num2:checked+#for2 {
+    color: $terciario-color;
+}
+
+#num3:checked+#for3 {
+    color: $terciario-color;
+}
+
+#for0 {
+    color: $cuaternario-color;
+}
+
+#for1 {
+    color: $cuaternario-color;
+}
+
+#for2 {
+    color: $cuaternario-color;
+}
+
+#for3 {
+    color: $cuaternario-color;
+}
+
+/* seccion textos */
+
+.vista {
+    background-color: $cuaternario-color;
+    border: 5px solid $secundario-color;
+    box-shadow: 10px -10px $terciario-color;
+    color: $primario-color;
+    margin: 1rem auto;
+    min-height: 30vh;
+    padding: 2rem;
+    width: 100%;
+    position: absolute;
+    top: 105%;
+
+    p {
+        &:last-child::after {
+            content: "_";
+            animation: titilar 0.8s infinite alternate;
+        }
+    }
+}
+
+#datos {
+    display: none;
+    
+}
+#laboral {
+    display: none;
+    
+}
+#academia {
+    display: none;
+    
+}
+#contacto {
+    display: none;
+}
+
+#num0:checked~#datos {
+    display: unset;
+}
+
+#num1:checked~#laboral {
+    display: unset;
+}
+
+#num2:checked~#academia {
+    display: unset;
+}
+
+#num3:checked~#contacto {
+    display: unset;
+}
+
+dd {
+    text-indent: 2rem;
+}
+
+.icono {
+    width: 2rem;
+}
