@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
+@import url("base.css");
 /* animaciones */
 @-webkit-keyframes vueltas {
   50% {
-    border: 1px solid #8B5E83;
+    border: 1px solid #000;
     color: transparent;
     -webkit-transform: skewY(0.5rad);
             transform: skewY(0.5rad);
@@ -11,7 +12,7 @@
 }
 @keyframes vueltas {
   50% {
-    border: 1px solid #8B5E83;
+    border: 1px solid #000;
     color: transparent;
     -webkit-transform: skewY(0.5rad);
             transform: skewY(0.5rad);
@@ -31,148 +32,76 @@
   }
 }
 
+/* fin animaciones */
+/* inicio estilos particulares */
 body {
-  background-color: #BEE5D3;
+  background-color: #000;
   font-family: 'Uchen', serif;
+  text-align: center;
 }
 
 body header {
-  margin: 1.5rem;
-  min-height: 25vh;
+  margin: 1rem;
 }
 
 body header h1 {
-  color: #3B5360;
+  color: #c3ffec;
+  text-transform: uppercase;
 }
 
-/* nav */
-.carta {
-  background-color: #D6B0B1;
-  border: 10px solid #8B5E83;
-  border-radius: 5px;
-  font-weight: 900;
-  height: 15rem;
-  overflow: hidden;
-  width: 10rem;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+body header h2 {
+  color: #ffd1ad;
+  position: relative;
+  text-transform: uppercase;
 }
 
-.width {
-  min-width: 20%;
-  max-width: 100%;
-}
-
-.dedo::after {
-  color: #8B5E83;
-  content: "\f25a";
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  text-align: center;
+body header h2::after {
+  content: "";
+  height: 0.25rem;
   width: 100%;
-  visibility: hidden;
-}
-
-.dedo:hover::after {
-  visibility: visible;
-}
-
-/* input */
-input {
-  display: none;
-}
-
-#num0:checked + #for0 {
-  color: #8B5E83;
-}
-
-#num1:checked + #for1 {
-  color: #8B5E83;
-}
-
-#num2:checked + #for2 {
-  color: #8B5E83;
-}
-
-#num3:checked + #for3 {
-  color: #8B5E83;
-}
-
-#for0 {
-  color: #3B5360;
-}
-
-#for1 {
-  color: #3B5360;
-}
-
-#for2 {
-  color: #3B5360;
-}
-
-#for3 {
-  color: #3B5360;
-}
-
-/* seccion textos */
-.vista {
-  background-color: #3B5360;
-  border: 5px solid #D6B0B1;
-  -webkit-box-shadow: 10px -10px #8B5E83;
-          box-shadow: 10px -10px #8B5E83;
-  color: #BEE5D3;
-  margin: 1rem auto;
-  min-height: 30vh;
-  padding: 2rem;
-  width: 100%;
+  background-color: #c3ffec;
   position: absolute;
-  top: 105%;
+  bottom: 0;
+  left: 0;
 }
 
-.vista p:last-child::after {
-  content: "_";
-  -webkit-animation: titilar 0.8s infinite alternate;
-          animation: titilar 0.8s infinite alternate;
+body main h3, body main h4 {
+  text-transform: uppercase;
 }
 
-#datos {
-  display: none;
+body main h3 {
+  border-bottom: 3px solid black;
 }
 
-#laboral {
-  display: none;
+body main p::first-letter {
+  text-transform: capitalize;
 }
 
-#academia {
-  display: none;
+body main section {
+  background-color: #c3ffec;
+  margin: 1rem;
 }
 
-#contacto {
-  display: none;
+body main .contacto {
+  background-color: #000;
+  color: #c3ffec;
 }
 
-#num0:checked ~ #datos {
-  display: unset;
+body main .contacto h3 {
+  visibility: hidden;
+  height: 0;
 }
 
-#num1:checked ~ #laboral {
-  display: unset;
+body main .contacto a {
+  color: #c3ffec;
 }
 
-#num2:checked ~ #academia {
-  display: unset;
+body main .sobreMi {
+  background-color: #ffd1ad;
+  text-align: justify;
 }
 
-#num3:checked ~ #contacto {
-  display: unset;
-}
-
-dd {
-  text-indent: 2rem;
-}
-
-.icono {
-  width: 2rem;
+body main .sobreMi h3 {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

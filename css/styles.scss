@@ -1,151 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('base.css');
 @import 'colores';
 @import 'animaciones';
 
+/* inicio estilos particulares */
+
 body {
-    background-color: $primario-color;
+    background-color: $terciario-color;
     font-family: 'Uchen', serif;
+    text-align: center;
 
     header {
-        margin: 1.5rem;
-        min-height: 25vh;
+        margin: 1rem;
         h1 {
-            color: $cuaternario-color;
-            
+            color: $primario-color;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: $secundario-color;
+            position: relative;
+            text-transform: uppercase;
+            &::after{
+                content: "";
+                height: 0.25rem;
+                width: 100%;
+                background-color: $primario-color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
         }
     }
 
-}
+    main {
 
-/* nav */
+        h3, h4 {
+            text-transform: uppercase;
+        }
 
-.carta {
-    background-color: $secundario-color;
-    border: 10px solid $terciario-color;
-    border-radius: 5px;
-    font-weight: 900;
-    height: 15rem;
-    overflow: hidden;
-    width: 10rem;
-    transform-origin: center;
-}
+        h3 {
+            border-bottom: 3px solid black;
+        }
 
-.width {
-    min-width: 20%;
-    max-width: 100%;
-}
+        p::first-letter {
+            text-transform: capitalize;
+        }
 
-.dedo {
-    &::after {
-        color: $terciario-color;
-        content: "\f25a";
-        display: inline-block;
-        font-family: "Font Awesome 5 Free"; 
-        font-weight: 900;
-        text-align: center;
-        width: 100%;
-        visibility: hidden;
-    }
-    &:hover::after {
-        visibility: visible;
-    }
-}
+        section {
+            background-color: $primario-color;
+            margin: 1rem;
+        }
 
-/* input */
-input {
-    display: none;
-}
+        .contacto {
+            background-color: $terciario-color;
+            color: $primario-color;
+            h3 {
+                visibility: hidden;
+                height: 0;
+            }
+            a {
+                color: $primario-color;
+            }
+        }
 
-#num0:checked+#for0 {
-    color: $terciario-color;
-}
-
-#num1:checked+#for1 {
-    color: $terciario-color;
-}
-
-#num2:checked+#for2 {
-    color: $terciario-color;
-}
-
-#num3:checked+#for3 {
-    color: $terciario-color;
-}
-
-#for0 {
-    color: $cuaternario-color;
-}
-
-#for1 {
-    color: $cuaternario-color;
-}
-
-#for2 {
-    color: $cuaternario-color;
-}
-
-#for3 {
-    color: $cuaternario-color;
-}
-
-/* seccion textos */
-
-.vista {
-    background-color: $cuaternario-color;
-    border: 5px solid $secundario-color;
-    box-shadow: 10px -10px $terciario-color;
-    color: $primario-color;
-    margin: 1rem auto;
-    min-height: 30vh;
-    padding: 2rem;
-    width: 100%;
-    position: absolute;
-    top: 105%;
-
-    p {
-        &:last-child::after {
-            content: "_";
-            animation: titilar 0.8s infinite alternate;
+        .sobreMi{
+            h3 {
+                text-align: center;
+            }
+            background-color: $cuaternario-color;
+            text-align: justify;
         }
     }
-}
-
-#datos {
-    display: none;
-    
-}
-#laboral {
-    display: none;
-    
-}
-#academia {
-    display: none;
-    
-}
-#contacto {
-    display: none;
-}
-
-#num0:checked~#datos {
-    display: unset;
-}
-
-#num1:checked~#laboral {
-    display: unset;
-}
-
-#num2:checked~#academia {
-    display: unset;
-}
-
-#num3:checked~#contacto {
-    display: unset;
-}
-
-dd {
-    text-indent: 2rem;
-}
-
-.icono {
-    width: 2rem;
 }

@@ -1,81 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Montivero</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-    <header class="d-flex flex-column align-items-center justify-around">
-        <h1 class="text-center text-uppercase">Curriculum Vitae <br><span>Montivero Leonel</span></h1>
+    <header>
+        <h1>Montivero Leonel</h1>
+        <h2>desarrollador web</h2>
     </header>
     <main class="container">
-        <fieldset class="d-flex justify-evenly flex-wrap gap-2 position-relative">
-            <legend class="text-uppercase">Historia de vida</legend>
-            <input type="radio" name="menu" id="num0">
-            <label for="num0" id="for0" class="dedo width">
-                <span class="carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Datos personales</span></label>
-            
-            <input type="radio" name="menu" id="num1">
-            <label for="num1" id="for1" class="dedo width">
-                <span class="carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Experiencia laboral</span></label>
-
-            <input type="radio" name="menu" id="num2">
-            <label for="num2" id="for2" class="dedo width">
-                <span class="carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Experiencia academica</span></label>
-
-            <input type="radio" name="menu" id="num3">
-            <label for="num3" id="for3" class="dedo width">
-                <span class="carta text-uppercase d-flex align-items-center text-center cursor-pointer m-20">Redes y contacto</span></label>
-
-                <div id="bienvenida" class="vista">
-                    <p>Hola, bienvenido a mi cv...</p>
-                    <p>Seleccionar una tarjeta para leer su contenido</p>
-                </div>
-                <section id="datos" class="vista">
+        <section class="contacto">
+            <h3>Contacto</h3>
+            <div>
+                <a href="mailto:">montvlein@gmail.com</a>
+                <div>+549 11 2508 9076</div>
+            </div>
+        </section>
+        <section>
+            <h3>aptitudes técnicas</h3>
+            <div class="d-flex justify-around flex-wrap">
+                <div>
+                    <h4>frontend</h4>
                     <div>
-                        <h2 class="text-uppercase">Datos personales</h2>
-                        <dl>
-                            <dt>Residencia</dt>
-                            <dd>Buenos Aires - Argentina</dd>
-
-                            <dt>Nacionalidad</dt>
-                            <dd>Argentina</dd>
-
-                            <dt>Año de nacimiento</dt>
-                            <dd>1990</dd>
-                        </dl>
+                        <div>html - css - js</div>
+                        <div>bootstrap</div>
+                        <div>sass</div>
+                        <div>vue.js</div>
+                        <div>kivy</div>
                     </div>
-                </section>
-                <section id="laboral" class="vista">
-                    <h2 class="text-uppercase">Experiencia laboral</h2>
-                    <p>Si, desde hace varios años, en diferentes lugares</p>
-                </section>
-                <section id="academia" class="vista">
-                    <h2 class="text-uppercase">Experiencia academica</h2>
-                    <dl>
-                        <dt>Certified Tech Developer</dt>
-                        <dd>Cursando la carrera Full Stack en Digital House</dd>
-                    </dl>
-                </section>
-                <section id="contacto" class="vista">
-                    <h2 class="text-uppercase">Contacto</h2>
-                    <dl>
-                        <dt>Email</dt>
-                        <dd>montvlein@gmail.com</dd>
-
-                        <dt>Repositorio</dt>
-                        <dd><a href="https://github.com/montvlein" target="_blank"
-                            class="d-flex align-items-center color-white">
-                            <img src="http://www.pngall.com/wp-content/uploads/2016/04/Github-Free-PNG-Image.png" alt="GitHub" 
-                            class="icono">Github</a></dd>
-                    </dl>
-                </section>
-        </fieldset>
+                </div>
+                <div>
+                    <h4>backend</h4>
+                    <div>
+                        <div>Node.JS - Express</div>
+                        <div>Python - Flask</div>
+                        <div>Java</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>persistencia</h4>
+                    <div>
+                        <div>SQLite</div>
+                        <div>SQLiteBrowser</div>
+                        <div>SQL-Alchemy</div>
+                        <div>MySQL</div>
+                        <div>MongoDB</div>
+                    </div>
+                </div>
+                <div>
+                    <h4>testing</h4>
+                    <div>
+                        <div>Node.js - Jest</div>
+                        <div>Python - Unittest</div>
+                        <div>Postman</div>
+                        <div>Selenium</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex flex-wrap p-20 gap-2">
+            <section>
+                <i class="fas fa-globe"></i>
+                <h4>Entornos</h4>
+                <p>manejo de entornos virtuales, git AWS, VSCode, IntelliJ.</p>
+            </section>
+            <section>
+                <i class="fas fa-pencil-alt"></i>
+                <h4>Ilustración</h4>
+                <p>Diseño web en figma. Diseño grafico en canva.</p>
+            </section>
+            <section>
+                <i class="fas fa-comments"></i>
+                <h4>Comunicación</h4>
+                <p>usó de Meet, Zoom, Discord, TeamViewer, Mural, Miro y Padlet.</p>
+            </section>
+        </section>
+        <section>
+            <h3>experiencia laboral</h3>
+            <div class="d-flex flex-wrap justify-around">
+                <div>
+                    <h4>GCABA - CDNNyA</h4>
+                    <div>
+                        <div>2019 - Actualidad</div>
+                        <p>gestor administrativo y soporte de sistemas</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>GCABA - SSHI</h4>
+                    <div>
+                        <div>2016 - 2019</div>
+                        <p>administrativo y atención de demandas</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>AMIA - HIPPY</h4>
+                    <div>
+                        <div>2014 - 2015</div>
+                        <p>coordinación de equipo territorial</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>SENTANDO BASES ASOCIACION CIVIL</h4>
+                    <div>
+                        <div>2011 - 2015</div>
+                        <p>administrativo y auxiliar de dirección</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sobreMi">
+            <h3>acerca de mí</h3>
+            <p>Soy una persona entusiasta, interesado en las últimas tecnologías y las posibilidades que generan.</p>
+            <p>Busco desarrollarme en el mundo de la criptoseguridad, tecnologias blockchain, realidad virtual y realidad aumentada.</p>
+            <p>Me desenvuelvo de forma autónoma frente a problemas, sin perder de vista el trabajo en equipo, la organización y compartir mí vision creativa y experiencia.</p>
+        </section>
+        <section class="contacto">
+            montvlein.crypto
+        </section>
     </main>
 </body>
 </html>
