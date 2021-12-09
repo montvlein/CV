@@ -2,6 +2,7 @@
 @import url('base.css');
 @import 'colores';
 @import 'animaciones';
+$size_site_content_width: 1024px;
 
 /* inicio estilos particulares */
 
@@ -9,6 +10,9 @@ body {
     background-color: $terciario-color;
     font-family: 'Uchen', serif;
     text-align: center;
+    padding: 2em;
+    max-width: $size_site_content_width;
+    margin: 0 auto;
 
     header {
         margin: 1rem;
@@ -39,7 +43,7 @@ body {
         }
 
         h3 {
-            border-bottom: 3px solid black;
+            border-bottom: 0.2rem solid $terciario-color;
         }
 
         p::first-letter {
@@ -49,6 +53,8 @@ body {
         section {
             background-color: $primario-color;
             margin: 1rem;
+            border-radius: 3px;
+            padding: 0.5rem;
         }
 
         .contacto {
@@ -69,6 +75,24 @@ body {
             }
             background-color: $cuaternario-color;
             text-align: justify;
+        }
+
+        @media screen and (min-width:$size_site_content_width) {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 5px;
+
+            .grid-full-row{
+                grid-column: 1/3;
+            }
+            .grid-left{
+                grid-column: 1/2;
+                grid-row: 4;
+            }
+            .grid-right{
+                grid-column: 2/3;
+                grid-row: 4;
+            }
         }
     }
 }
