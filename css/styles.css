@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,10 +11,10 @@
 /* inicio estilos particulares */
 body {
   background-color: #000;
-  font-family: 'Uchen', serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   padding: 2em;
-  max-width: 1024px;
+  max-width: 1025px;
   margin: 0 auto;
 }
 
@@ -45,11 +45,11 @@ body header h2::after {
 
 body main h3, body main h4 {
   text-transform: uppercase;
+  margin: 0.7rem;
 }
 
 body main h3 {
   border-bottom: 0.2rem solid #000;
-  margin-bottom: 0.7rem;
 }
 
 body main p::first-letter {
@@ -65,7 +65,6 @@ body main section {
 
 body main .contacto {
   background-color: #000;
-  color: #c3ffec;
 }
 
 body main .contacto h3 {
@@ -74,7 +73,7 @@ body main .contacto h3 {
 }
 
 body main .contacto a {
-  color: #c3ffec;
+  color: #ceffca;
 }
 
 body main .contacto div {
@@ -96,11 +95,19 @@ body main .sobreMi h3 {
   text-align: center;
 }
 
+body main .sobreMi p {
+  padding: 0 1.5rem;
+}
+
 body main .icons {
   font-size: 3rem;
 }
 
-@media screen and (min-width: 1024px) {
+body main .backgound-color-cuaternario {
+  background-color: #ceffca;
+}
+
+@media screen and (min-width: 1025px) {
   body main {
     display: -ms-grid;
     display: grid;
@@ -138,8 +145,6 @@ body main .icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   body main .justify-content-evenly {
     -webkit-box-pack: space-evenly;
