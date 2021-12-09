@@ -31,21 +31,14 @@ body header h2 {
   color: #ffd1ad;
   position: relative;
   text-transform: uppercase;
-}
-
-body header h2::after {
-  content: "";
-  height: 0.25rem;
-  width: 100%;
-  background-color: #c3ffec;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  border-bottom: 0.25rem solid #c3ffec;
+  padding-bottom: 00.5rem;
 }
 
 body main h3, body main h4 {
   text-transform: uppercase;
-  margin: 0.7rem;
+  margin: 0 0.3rem;
+  padding: 0.9rem;
 }
 
 body main h3 {
@@ -96,14 +89,14 @@ body main .sobreMi h3 {
 }
 
 body main .sobreMi p {
-  padding: 0 1.5rem;
+  padding: 0.75rem;
 }
 
 body main .icons {
   font-size: 3rem;
 }
 
-body main .backgound-color-cuaternario {
+body main .card-info, body main .card-info section {
   background-color: #ceffca;
 }
 
@@ -145,11 +138,16 @@ body main .backgound-color-cuaternario {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   body main .justify-content-evenly {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  body main .card-info section {
+    max-width: 27%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
