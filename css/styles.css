@@ -1,38 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
-@import url("base.css");
-/* animaciones */
-@-webkit-keyframes vueltas {
-  50% {
-    border: 1px solid #000;
-    color: transparent;
-    -webkit-transform: skewY(0.5rad);
-            transform: skewY(0.5rad);
-    width: 0.3rem;
-  }
-}
-@keyframes vueltas {
-  50% {
-    border: 1px solid #000;
-    color: transparent;
-    -webkit-transform: skewY(0.5rad);
-            transform: skewY(0.5rad);
-    width: 0.3rem;
-  }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-@-webkit-keyframes titilar {
-  0% {
-    color: transparent;
-  }
-}
-
-@keyframes titilar {
-  0% {
-    color: transparent;
-  }
-}
-
-/* fin animaciones */
 /* inicio estilos particulares */
 body {
   background-color: #000;
@@ -73,7 +48,8 @@ body main h3, body main h4 {
 }
 
 body main h3 {
-  border-bottom: 0.3rem solid #000;
+  border-bottom: 0.2rem solid #000;
+  margin-bottom: 0.7rem;
 }
 
 body main p::first-letter {
@@ -101,6 +77,16 @@ body main .contacto a {
   color: #c3ffec;
 }
 
+body main .contacto div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 body main .sobreMi {
   background-color: #ffd1ad;
   text-align: justify;
@@ -108,6 +94,10 @@ body main .sobreMi {
 
 body main .sobreMi h3 {
   text-align: center;
+}
+
+body main .icons {
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -123,19 +113,38 @@ body main .sobreMi h3 {
     -ms-grid-column-span: 2;
     grid-column: 1/3;
   }
-  body main .grid-left {
+  body main .grid-left-column {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  body main .grid-right {
+  body main .grid-right-column {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     -ms-grid-row: 4;
     grid-row: 4;
+  }
+  body main .grid-2x2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  }
+  body main .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main .justify-content-evenly {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 /*# sourceMappingURL=styles.css.map */
