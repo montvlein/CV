@@ -1,53 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Montivero Fabricio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .json-key { color: #9f7aea; font-weight: bold;}
-        .json-string { color: #f6ad55; }
-        .json-boolean { color: #68d391; }
-        .json-number { color: #63b3ed; }
-        .json-brace { color: #ffffff; }
-    </style>
-</head>
-<body class="bg-gray-900 text-gray-100">
-    <header class="flex flex-col-reverse justify-center items-end m-2 text-xl">
-        <h1>Montivero Leonel</h1>
-        <h2 class="uppercase text-indigo-500">curriculum vitae</h2>
-    </header>
-    <main>
-        <div id="output" class="m-2 bg-gray-800 text-white p-4 rounded font-mono text-sm overflow-auto"></div>
-    </main>
-    <script>
-        function prettifyJSON(json) {
-            const jsonString = JSON.stringify(json, null, 2);
-            return jsonString
-                .replace(/"([\w\s\-]+)"(?=\s*:)/g, '<span class="json-key">"$1"</span>')
-                .replace(/:\s*"(.*?)"/g, ': <span class="json-string">"$1"</span>')
-                .replace(/\b(true|false|null)\b/g, '<span class="json-boolean">$1</span>')
-                .replace(/\b(\d+)\b/g, '<span class="json-number">$1</span>')
-                .replace(/([{}\[\]])/g, '<span class="json-brace">$1</span>')
-                .replace(/([{}\[\]])/g, '<br>$1<br>')
-                .replace(/(,)(?!$)/g, '$1<br>');
-        }
-        const jsonFile = './datos.json';
-        fetch(jsonFile)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Fail loading JSON');
-                }
-                return response.json();
-            })
-            .then(data => {
-                const prettyJSON = prettifyJSON(data);
-                document.getElementById('output').innerHTML = prettyJSON;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    </script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Montivero Fabricio Leonel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
