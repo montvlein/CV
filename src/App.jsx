@@ -5,12 +5,13 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
+import data from '../datos.json'
 
 function App() {
   return (
     <div className="min-h-screen bg-white p-8 max-w-5xl mx-auto roboto-medium">
       <header className='mb-2 text-center'>
-        <h1 className="text-3xl font-bold mb-2 uppercase">Fabricio Leonel Montivero</h1>
+        <h1 className="text-3xl font-bold mb-2 uppercase">{data.personalInfo.lastName} {data.personalInfo.firstName}</h1>
         <hr/>
       </header>
 
