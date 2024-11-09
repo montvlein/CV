@@ -15,7 +15,7 @@ function App() {
         <hr/>
       </header>
 
-      <div className="grid grid-cols-3 gap-8">
+      <main className="grid grid-cols-3 gap-8">
         {/* Left Column */}
         <div className="col-span-1 space-y-8">
           <Contact />
@@ -29,7 +29,7 @@ function App() {
           <Experience />
           <Projects />
         </div>
-      </div>
+      </main>
     </div>
   );
 }
