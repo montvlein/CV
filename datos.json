@@ -12,14 +12,16 @@
         "summary": "Desarrollador Fullstack con experiencia en tecnologías modernas como React, Next.js y Golang, apasionado por crear soluciones eficientes y escalables."
     },
     "skills": {
-        "technical": [
+        "programmingLanguages": [
             "HTML",
             "CSS",
-            "AppScript",
             "JavaScript",
             "Java",
             "Golang",
             "Python",
+            "AppScript"
+        ],
+        "frameworksAndLibraries": [
             "React",
             "Next.js",
             "Bootstrap v4",
@@ -28,7 +30,9 @@
             "Spring Boot",
             "Nest.js",
             "Prisma",
-            "Fiber",
+            "Fiber"
+        ],
+        "toolsAndTechnologies": [
             "Postman",
             "Git",
             "Jira"
