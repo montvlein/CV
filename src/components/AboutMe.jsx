@@ -1,12 +1,14 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
-export default function AboutMe() {
+export default function AboutMe({summary}) {
+  const {language} = useLanguage()
+
   return (
     <section>
-      <h2 className="text-xl font-semibold mb-3">ABOUT ME</h2>
+      <h2 className="text-xl font-semibold mb-3">{language === 'en' ? 'ABOUT ME' : 'SOBRE MÍ'}</h2>
       <p className="text-gray-600 leading-relaxed dark:text-gray-300">
-        Fullstack Developer with experience in modern technologies such as React, Next.js, and Golang, 
-        passionate about creating efficient and scalable solutions.
+        {language === 'en' ? summary.en : summary.es}
       </p>
     </section>
   );

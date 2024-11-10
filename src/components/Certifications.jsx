@@ -1,25 +1,13 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
-export default function Certifications() {
-  const certifications = [
-    {
-      title: "Certified Tech Developer - Professional Developer",
-      issuer: "Digital House",
-      date: "December 2022",
-      link: "https://drive.google.com/file/d/1gNuxwgMU3JVq69oB_VoHIldNtAs-spAi/view?usp=sharing"
-    },
-    {
-      title: "Back End Specialist",
-      issuer: "Digital House",
-      date: "December 2023",
-      link: "https://drive.google.com/file/d/1I_Vc48t1NEpfpYJZMUBMs-CG_JGuXXml/view?usp=sharing"
-    }
-  ];
+export default function Certifications({certifications}) {
+  const { language } = useLanguage()
 
   return (
     <section>
-      <h2 className="text-xl font-semibold mb-3">CERTIFICATIONS</h2>
-      <div className="space-y-4">
+      <h2 className="text-xl font-semibold mb-3">{language === 'en' ? 'CERTIFICATIONS' : 'CERTIFICACIONES'}</h2>
+      <article className="space-y-4">
         {certifications.map((cert, index) => (
           <div key={index}>
             <a 
@@ -28,13 +16,18 @@ export default function Certifications() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {cert.title}
+               {cert.title[language]}
             </a>
             <p className="text-gray-600 dark:text-gray-300">{cert.issuer}</p>
-            <p className="text-gray-600 dark:text-gray-400">{cert.date}</p>
+            <p className="text-gray-600 dark:text-gray-400">
+              {new Date(cert.date).toLocaleDateString(language === 'en' ? 'en-US' : 'es-ES', {
+                year: 'numeric',
+                month: 'long'
+              })}
+            </p>
           </div>
         ))}
-      </div>
+      </article>
     </section>
   );
 }

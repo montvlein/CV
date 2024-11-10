@@ -1,23 +1,15 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
-export default function Skills() {
+export default function Skills({skills}) {
+  const { language } = useLanguage();
+
   const skillCategories = {
-    'Programming Languages': [
-      'HTML', 'CSS', 'JavaScript', 'Java', 'Golang', 'Python', 'AppScript'
-    ],
-    'Frameworks & Libraries': [
-      'React', 'Next.js', 'Bootstrap v4', 'Tailwind', 'Express', 'Spring Boot', 
-      'Nest.js', 'Prisma', 'Fiber'
-    ],
-    'Tools & Technologies': [
-      'Postman', 'Git', 'Jira'
-    ],
-    'Soft Skills': [
-      'Teamwork', 'Problem-solving', 'Time management', 'Adaptability'
-    ],
-    'Languages': [
-      'Spanish (Native)', 'English (A2)'
-    ]
+    'Programming Languages': skills.programmingLanguages,
+    'Frameworks & Libraries': skills.frameworksAndLibraries,
+    'Tools & Technologies': skills.toolsAndTechnologies,
+    'Soft Skills': skills.softSkills[language],
+    'Languages': skills.languages
   };
 
   return (

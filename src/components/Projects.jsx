@@ -1,37 +1,17 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
-export default function Projects() {
-  const projects = [
-    {
-      title: "Series and Movies Catalog",
-      description: "System composed of multiple microservices to search for series and movie information.",
-      technologies: ["Java SpringBoot", "Docker"],
-      link: "https://github.com/montvlein/examen-esp-backend-Montivero-Fabricio"
-    },
-    {
-      title: "Ticket Sales Platform",
-      description: "Event platform to manage ticket sales.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      link: "https://github.com/montvlein/DH_Final_Project_2_Frontend",
-      deployment: "https://dh-final-project-2-frontend-rsanmfug1.vercel.app/"
-    },
-    {
-      title: "OCR Reader",
-      description: "Demo website for character recognition.",
-      technologies: ["HTML", "Appscript", "GCP"],
-      link: "https://github.com/montvlein/OCR",
-      deployment: "https://montvlein.github.io/OCR/"
-    }
-  ];
+export default function Projects({projects}) {
+  const { language } = useLanguage();
 
   return (
     <section>
-      <h2 className="text-xl font-semibold mb-3">PROJECTS</h2>
+      <h2 className="text-xl font-semibold mb-3">{language === 'en' ? 'PROJECTS' : 'PROYECTOS'}</h2>
       <div className="space-y-6">
         {projects.map((project, index) => (
           <div key={index}>
-            <h3 className="font-medium">{project.title}</h3>
-            <p className="text-gray-600 dark:text-gray-300 mt-1">{project.description}</p>
+            <h3 className="font-medium">{project.title[language]}</h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-1">{project.description[language]}</p>
             <div className="flex flex-wrap gap-2 mt-2">
               {project.technologies.map((tech, i) => (
                 <span key={i} className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm">

@@ -27,15 +27,15 @@ function App() {
         {/* Left Column */}
         <div className="col-span-1 space-y-8">
           <Contact data={data.personalInfo.contact}/>
-          <Skills />
-          <Certifications />
+          <Skills skills={data.skills} />
+          <Certifications certifications={data.certifications} />
         </div>
 
         {/* Right Column */}
         <div className="col-span-2 space-y-8">
-          <AboutMe />
-          <Experience />
-          <Projects />
+          <AboutMe summary={data.personalInfo.summary} />
+          <Experience experiences={data.experience} />
+          <Projects projects={data.projects} />
         </div>
       </main>
     </div>

@@ -54,10 +54,9 @@
                 "Adaptability"
             ]
         },
-        "languages": {
-            "Spanish": "Native",
-            "English": "A2"
-        }
+        "languages": [
+            "Spanish (Native)", "English (A2)"
+        ]
     },
     "experience": [
         {
@@ -66,7 +65,7 @@
                 "es": "Desarrollador Fullstack",
                 "en": "Fullstack Developer"
             },
-            "startDate": "2021-01-01",
+            "startDate": "2023-02-01",
             "endDate": "",
             "description": {
                 "es": [
