@@ -9,19 +9,20 @@ import data from './data/resume.json'
 import DarkModeToggle from './components/Toggles/DarkModeToggle';
 import LanguageToggle from './components/Toggles/LangToggle';
 import { LanguageProvider } from './context/LanguageContext';
+import PdfDownloadButton from './components/PdfDownloadButton';
 
 function App() {
   return (
     <LanguageProvider>
-    <div className="min-h-screen p-8 max-w-5xl mx-auto roboto-medium bg-white dark:bg-gray-900 dark:text-white">
+    <div className="absolute top-4 right-4 flex gap-2 print:hidden">
+      <PdfDownloadButton />
+      <LanguageToggle />
+      <DarkModeToggle />
+    </div>
+    <div id="cv-content" className="min-h-screen p-8 max-w-5xl mx-auto roboto-medium bg-white dark:bg-gray-900 dark:text-white">
       <header className='mb-2 text-center'>
         <h1 className="text-3xl font-bold mb-2 uppercase">{data.personalInfo.lastName} {data.personalInfo.firstName}</h1>
         <hr/>
-        <DarkModeToggle className="absolute top-4 right-4" />
-        <div className="absolute top-4 right-4 flex gap-2">
-          <LanguageToggle />
-          <DarkModeToggle />
-        </div>
       </header>
       <main className="grid grid-cols-3 gap-8">
         {/* Left Column */}
