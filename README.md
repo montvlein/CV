@@ -1,1 +1,1 @@
-deploy link -> https://montvlein.github.io/CV/
+deploy link -> [cv view](https://montivero-cv.vercel.app/)
