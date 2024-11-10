@@ -24,14 +24,14 @@ export default function Certifications() {
           <div key={index}>
             <a 
               href={cert.link}
-              className="font-medium hover:text-blue-600"
+              className="font-medium hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
               target="_blank"
               rel="noopener noreferrer"
             >
               {cert.title}
             </a>
-            <p className="text-gray-600">{cert.issuer}</p>
-            <p className="text-gray-600">{cert.date}</p>
+            <p className="text-gray-600 dark:text-gray-300">{cert.issuer}</p>
+            <p className="text-gray-600 dark:text-gray-400">{cert.date}</p>
           </div>
         ))}
       </div>

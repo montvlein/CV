@@ -21,12 +21,12 @@ export default function Experience() {
           <h3 className="font-medium">{experience.role}</h3>
           <a 
             href={experience.companyLink}
-            className="text-blue-600 hover:text-blue-800"
+            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
           >
             {experience.company}
           </a>
-          <span className="text-gray-600"> | {experience.period}</span>
-          <ul className="list-disc ml-4 mt-2 text-gray-600">
+          <span className="text-gray-600 dark:text-gray-400"> | {experience.period}</span>
+          <ul className="list-disc ml-4 mt-2 text-gray-600 dark:text-gray-300">
             {experience.description.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
