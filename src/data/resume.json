@@ -1,0 +1,167 @@
+{
+    "personalInfo": {
+        "firstName": "Fabricio Leonel",
+        "lastName": "Montivero",
+        "contact": {
+            "phone": "+549 11 5827 2260",
+            "email": "montvlein@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/leonel-montivero-developer/",
+            "location": "Buenos Aires, Argentina"
+        },
+        "birthDate": "1990-03-27",
+        "summary": {
+            "es": "Desarrollador Fullstack con experiencia en tecnologías modernas como React, Next.js y Golang, apasionado por crear soluciones eficientes y escalables.",
+            "en": "Fullstack Developer with experience in modern technologies such as React, Next.js and Golang, passionate about creating efficient and scalable solutions."
+        }
+    },
+    "skills": {
+        "programmingLanguages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Java",
+            "Golang",
+            "Python",
+            "AppScript"
+        ],
+        "frameworksAndLibraries": [
+            "React",
+            "Next.js",
+            "Bootstrap v4",
+            "Tailwind",
+            "Express",
+            "Spring Boot",
+            "Nest.js",
+            "Prisma",
+            "Fiber"
+        ],
+        "toolsAndTechnologies": [
+            "Postman",
+            "Git",
+            "Jira"
+        ],
+        "softSkills": {
+            "es": [
+                "Trabajo en equipo",
+                "Resolución de problemas",
+                "Gestión del tiempo",
+                "Adaptabilidad"
+            ],
+            "en": [
+                "Teamwork",
+                "Problem-solving",
+                "Time management",
+                "Adaptability"
+            ]
+        },
+        "languages": {
+            "Spanish": "Native",
+            "English": "A2"
+        }
+    },
+    "experience": [
+        {
+            "company": "Set & Forget",
+            "role": {
+                "es": "Desarrollador Fullstack",
+                "en": "Fullstack Developer"
+            },
+            "startDate": "2021-01-01",
+            "endDate": "",
+            "description": {
+                "es": [
+                    "Diseñé e implementé soluciones usando AppScript y Google Cloud.",
+                    "Diseñé e implementé soluciones escalables utilizando React y Node.js.",
+                    "Integré APIs RESTful para optimizar la interoperabilidad entre servicios."
+                ],
+                "en": [
+                    "Designed and implemented solutions using AppScript and Google Cloud.",
+                    "Developed scalable solutions using React and Node.js.",
+                    "Integrated RESTful APIs to optimize service interoperability."
+                ]
+            },
+            "companyLink": "https://www.linkedin.com/company/setandforget/"
+        }
+    ],
+    "education": [
+        {
+            "institution": "",
+            "degree": "",
+            "startDate": "",
+            "endDate": "",
+            "description": ""
+        }
+    ],
+    "projects": [
+        {
+            "title": {
+                "es": "Catálogo de series y películas",
+                "en": "Series and Movies Catalog"
+            },
+            "description": {
+                "es": "Sistema compuesto por varios microservicios para buscar información de series y películas.",
+                "en": "System composed of multiple microservices to search for series and movie information."
+            },
+            "technologies": [
+                "Java",
+                "SpringBoot",
+                "Docker"
+            ],
+            "link": "https://github.com/montvlein/examen-esp-backend-Montivero-Fabricio",
+            "deployment": ""
+        },
+        {
+            "title": {
+                "es": "Plataforma para la venta de tickets",
+                "en": "Ticket Sales Platform"
+            },
+            "description": {
+                "es": "Plataforma de eventos para gestionar la venta de tickets.",
+                "en": "Event platform to manage ticket sales."
+            },
+            "technologies": [
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS"
+            ],
+            "link": "https://github.com/montvlein/DH_Final_Project_2_Frontend",
+            "deployment": "https://dh-final-project-2-frontend-rsanmfug1.vercel.app/"
+        },
+        {
+            "title": {
+                "es": "Lector OCR",
+                "en": "OCR Reader"
+            },
+            "description": {
+                "es": "Web de muestra de reconocimiento de caracteres.",
+                "en": "Demo website for character recognition."
+            },
+            "technologies": [
+                "HTML",
+                "Appscript"
+            ],
+            "link": "https://github.com/montvlein/OCR",
+            "deployment": "https://montvlein.github.io/OCR/"
+        }
+    ],
+    "certifications": [
+        {
+            "title": {
+                "es": "Certified Tech Developer - Professional Developer",
+                "en": "Certified Tech Developer - Professional Developer"
+            },
+            "issuer": "Digital House",
+            "date": "2022-12-01",
+            "link": "https://drive.google.com/file/d/1gNuxwgMU3JVq69oB_VoHIldNtAs-spAi/view?usp=sharing"
+        },
+        {
+            "title": {
+                "es": "Especialista en Back End",
+                "en": "Back End Specialist"
+            },
+            "issuer": "Digital House",
+            "date": "2023-12-01",
+            "link": "https://drive.google.com/file/d/1I_Vc48t1NEpfpYJZMUBMs-CG_JGuXXml/view?usp=sharing"
+        }
+    ]
+}
