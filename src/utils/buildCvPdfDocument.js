@@ -17,8 +17,8 @@ const LABELS = {
     phone: 'Teléfono',
     location: 'Ubicación',
     email: 'Email',
-    linkedin: 'Perfil de LinkedIn',
-    github: 'Repositorio GitHub',
+    linkedin: 'LinkedIn',
+    github: 'GitHub',
     liveDemo: 'Demo en vivo',
   },
   en: {
@@ -36,8 +36,8 @@ const LABELS = {
     phone: 'Phone',
     location: 'Location',
     email: 'Email',
-    linkedin: 'LinkedIn Profile',
-    github: 'GitHub Repository',
+    linkedin: 'LinkedIn',
+    github: 'GitHub',
     liveDemo: 'Live Demo',
   },
 };
@@ -54,17 +54,17 @@ function formatCertDate(date, language) {
 }
 
 function buildContactSection(contact, labels) {
+  const links = [
+    { text: labels.linkedin, link: contact.linkedin, style: 'link', margin: [0, 0, 0, 4] },
+    { text: labels.github, link: contact.github, style: 'link', margin: [0, 0, 0, 4] },
+  ];
+
   return [
     sectionTitle(labels.contact),
     { text: `${labels.phone}: ${contact.phone}`, style: 'body' },
     { text: `${labels.location}: ${contact.location}`, style: 'body' },
     { text: `${labels.email}: ${contact.email}`, style: 'body' },
-    {
-      text: labels.linkedin,
-      link: contact.linkedin,
-      style: 'link',
-      margin: [0, 0, 0, 4],
-    },
+    ...links,
   ];
 }
 
@@ -137,9 +137,15 @@ function buildExperienceSection(experiences, language, labels) {
 }
 
 function buildProjectsSection(projects, language, labels) {
+  const visibleProjects = projects.filter((project) => project.show);
+
+  if (visibleProjects.length === 0) {
+    return [];
+  }
+
   return [
     sectionTitle(labels.projects),
-    ...projects.flatMap((project) => {
+    ...visibleProjects.flatMap((project) => {
       const links = [
         { text: labels.github, link: project.link, style: 'link' },
       ];
