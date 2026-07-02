@@ -11,7 +11,8 @@ export default function Contact({data}) {
         <li>📞 {data.phone}</li>
         <li>📍 {data.location}</li>
         <li>✉️ {data.email}</li>
-        <li>🔗 <a href="https://www.linkedin.com/in/leonel-montivero-developer/" className="hover:text-blue-600">LinkedIn Profile</a></li>
+        <li>🔗 <a href={data.linkedin} className="hover:text-blue-600">LinkedIn</a></li>
+        <li>🔗 <a href={data.github} className="hover:text-blue-600">GitHub</a></li>
       </ul>
     </section>
   );
