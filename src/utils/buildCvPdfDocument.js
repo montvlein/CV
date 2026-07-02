@@ -1,4 +1,5 @@
 import { formatExperienceDateRange } from './formatDate';
+import { groupExperiencesByRole } from './groupExperiencesByRole';
 
 const LABELS = {
   es: {
@@ -106,27 +107,31 @@ function buildCertificationsSection(certifications, language, labels) {
 }
 
 function buildExperienceSection(experiences, language, labels) {
+  const groupedExperiences = groupExperiencesByRole(experiences, language);
+
   return [
     sectionTitle(labels.experience),
-    ...experiences.flatMap((experience) => [
-      { text: experience.role[language], style: 'role', margin: [0, 0, 0, 1] },
-      {
-        text: [
-          experience.companyLink
-            ? { text: experience.company, link: experience.companyLink, style: 'link' }
-            : { text: experience.company, style: 'bodySmall' },
-          {
-            text: ` | ${formatExperienceDateRange(experience.startDate, experience.endDate, language)}`,
-            style: 'bodySmall',
-          },
-        ],
-        margin: [0, 0, 0, 2],
-      },
-      {
-        ul: experience.description[language],
-        style: 'body',
-        margin: [0, 0, 0, 10],
-      },
+    ...groupedExperiences.flatMap((group) => [
+      { text: group.role, style: 'role', margin: [0, 0, 0, 4] },
+      ...group.entries.flatMap((experience) => [
+        {
+          text: [
+            experience.companyLink
+              ? { text: experience.company, link: experience.companyLink, style: 'link' }
+              : { text: experience.company, style: 'bodySmall' },
+            {
+              text: ` | ${formatExperienceDateRange(experience.startDate, experience.endDate, language)}`,
+              style: 'bodySmall',
+            },
+          ],
+          margin: [0, 0, 0, 2],
+        },
+        {
+          ul: experience.description[language],
+          style: 'body',
+          margin: [0, 0, 0, 10],
+        },
+      ]),
     ]),
   ];
 }
