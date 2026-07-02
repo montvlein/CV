@@ -185,6 +185,25 @@
         },
         {
             "title": {
+                "es": "CV web interactivo",
+                "en": "Interactive Web CV"
+            },
+            "description": {
+                "es": "Sitio de curriculum vitae bilingüe con modo oscuro, contenido dinámico desde JSON y exportación a PDF con pdfmake.",
+                "en": "Built a bilingual curriculum vitae website with dark mode, JSON-driven content, and PDF export using pdfmake."
+            },
+            "technologies": [
+                "React",
+                "Vite",
+                "Tailwind CSS",
+                "pdfmake"
+            ],
+            "link": "https://github.com/montvlein/CV",
+            "deployment": "https://cv.montivero.ar",
+            "show": true
+        },
+        {
+            "title": {
                 "es": "Catálogo de series y películas",
                 "en": "Series and Movies Catalog"
             },
@@ -217,7 +236,7 @@
             ],
             "link": "https://github.com/montvlein/DH_Final_Project_2_Frontend",
             "deployment": "https://dh-final-project-2-frontend-rsanmfug1.vercel.app/",
-            "show": true
+            "show": false
         },
         {
             "title": {
