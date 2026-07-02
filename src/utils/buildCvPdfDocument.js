@@ -127,7 +127,7 @@ function buildExperienceSection(experiences, language, labels) {
           margin: [0, 0, 0, 2],
         },
         {
-          ul: experience.description[language],
+          ul: [...experience.description[language]],
           style: 'body',
           margin: [0, 0, 0, 10],
         },
@@ -169,8 +169,9 @@ function buildProjectsSection(projects, language, labels) {
 }
 
 export function buildCvPdfDocument(data, language) {
+  const resume = structuredClone(data);
   const labels = LABELS[language];
-  const { personalInfo, skills, experience, projects, certifications } = data;
+  const { personalInfo, skills, experience, projects, certifications } = resume;
 
   const leftColumn = [
     ...buildContactSection(personalInfo.contact, labels),
