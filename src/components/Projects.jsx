@@ -8,7 +8,7 @@ export default function Projects({projects}) {
     <section>
       <h2 className="text-xl font-semibold mb-3">{language === 'en' ? 'PROJECTS' : 'PROYECTOS'}</h2>
       <div className="space-y-6">
-        {projects.map((project, index) => (
+        {projects.filter(project => project.show).map((project, index) => (
           <div key={index}>
             <h3 className="font-medium">{project.title[language]}</h3>
             <p className="text-gray-600 dark:text-gray-300 mt-1">{project.description[language]}</p>

@@ -12,7 +12,7 @@
         "birthDate": "1990-03-27",
         "summary": {
             "es": "Desarrollador Fullstack con experiencia en microservicios, Google Cloud y soluciones de salud. Especializado en NestJS, React y el ecosistema Google Workspace, con trayectoria en consultoría técnica y desarrollo de sistemas escalables.",
-            "en": "Fullstack Developer with experience in microservices, Google Cloud, and healthcare solutions. Specialized in NestJS, React, and the Google Workspace ecosystem, with a track record in technical consultancy and scalable system development."
+            "en": "Fullstack Developer with experience in microservices, Google Cloud, and healthcare solutions. Specializing in NestJS, React, and the Google Workspace ecosystem, with a track record in technical consultancy and scalable system development."
         }
     },
     "skills": {
@@ -56,7 +56,7 @@
             ]
         },
         "languages": [
-            "Spanish (Native)", "English (A2)"
+            "Spanish (Native)", "English (B1)"
         ]
     },
     "experience": [
@@ -67,7 +67,7 @@
                 "en": "Fullstack Software Engineer"
             },
             "startDate": "2023-02-01",
-            "endDate": "2026-06-30",
+            "endDate": "",
             "description": {
                 "es": [
                     "Trabajé en modalidad de consultoría resolviendo desafíos técnicos variados para distintos clientes.",
@@ -77,7 +77,7 @@
                     "Integré normativa de salud colombiana: historias clínicas, calendario, RIPS e IHCE/RDA (interoperabilidad Ministerio de Salud)."
                 ],
                 "en": [
-                    "Provided consultancy solving diverse technical challenges across multiple client projects.",
+                    "Provided consultancy on diverse technical challenges across multiple client projects.",
                     "Planned and built from scratch the medical microservice of a reproductive medicine ERP using NestJS, Prisma, and PostgreSQL 15.",
                     "Contributed to modules of the accounting microservice built on Odoo v18 (Python).",
                     "Executed a large-scale data migration from the legacy system (Escafandra) to the new ERP.",
@@ -101,7 +101,7 @@
                     "Integré BigQuery como base de datos para persistencia y análisis de datos."
                 ],
                 "en": [
-                    "Consultancy for building tools within the Google Workspace ecosystem.",
+                    "Provided consultancy for developing tools within the Google Workspace ecosystem.",
                     "Delivered solutions ranging from Google Sheets formulas to Apps Script deployed as serverless functions, add-ons, or extensions.",
                     "Integrated BigQuery for data persistence and analytics."
                 ]
@@ -170,7 +170,7 @@
             },
             "description": {
                 "es": "Backend self-hosted de chat con API REST y WebSocket, organizaciones/canales, panel de administración, invitaciones y despliegue con Docker.",
-                "en": "Self-hosted chat backend with REST API and WebSocket, organizations/channels, admin panel, invitations, and Docker deployment."
+                "en": "Built a self-hosted chat backend with REST API and WebSocket, organizations/channels, admin panel, invitations, and Docker deployment."
             },
             "technologies": [
                 "Go",
@@ -180,7 +180,8 @@
                 "Docker"
             ],
             "link": "https://github.com/montvlein/cocina-chat-local-server",
-            "deployment": ""
+            "deployment": "",
+            "show": true
         },
         {
             "title": {
@@ -189,7 +190,7 @@
             },
             "description": {
                 "es": "Sistema compuesto por varios microservicios para buscar información de series y películas.",
-                "en": "System composed of multiple microservices to search for series and movie information."
+                "en": "Developed a system composed of multiple microservices to search for series and movie information."
             },
             "technologies": [
                 "Java",
@@ -197,7 +198,8 @@
                 "Docker"
             ],
             "link": "https://github.com/montvlein/examen-esp-backend-Montivero-Fabricio",
-            "deployment": ""
+            "deployment": "",
+            "show": false
         },
         {
             "title": {
@@ -206,7 +208,7 @@
             },
             "description": {
                 "es": "Plataforma de eventos para gestionar la venta de tickets.",
-                "en": "Event platform to manage ticket sales."
+                "en": "Built an event platform to manage ticket sales."
             },
             "technologies": [
                 "Next.js",
@@ -214,7 +216,8 @@
                 "Tailwind CSS"
             ],
             "link": "https://github.com/montvlein/DH_Final_Project_2_Frontend",
-            "deployment": "https://dh-final-project-2-frontend-rsanmfug1.vercel.app/"
+            "deployment": "https://dh-final-project-2-frontend-rsanmfug1.vercel.app/",
+            "show": true
         },
         {
             "title": {
@@ -223,14 +226,15 @@
             },
             "description": {
                 "es": "Web de muestra de reconocimiento de caracteres.",
-                "en": "Demo website for character recognition."
+                "en": "Developed a demo website for character recognition."
             },
             "technologies": [
                 "HTML",
                 "Appscript"
             ],
             "link": "https://github.com/montvlein/OCR",
-            "deployment": "https://montvlein.github.io/OCR/"
+            "deployment": "https://montvlein.github.io/OCR/",
+            "show": false
         }
     ],
     "certifications": [
