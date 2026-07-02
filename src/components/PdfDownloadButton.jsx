@@ -1,7 +1,11 @@
 import React from 'react';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+import pdfMake from 'pdfmake/build/pdfmake';
+import pdfFonts from 'pdfmake/build/vfs_fonts';
 import { useLanguage } from '../context/LanguageContext';
+import resumeData from '../data/resume.json';
+import { buildCvPdfDocument } from '../utils/buildCvPdfDocument';
+
+pdfMake.addVirtualFileSystem(pdfFonts);
 
 export default function PdfDownloadButton({ className }) {
   const { language } = useLanguage();
@@ -9,26 +13,10 @@ export default function PdfDownloadButton({ className }) {
 
   const generatePDF = async () => {
     setIsGenerating(true);
-    const content = document.getElementById('cv-content');
-    
+
     try {
-      const canvas = await html2canvas(content, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        windowWidth: content.scrollWidth,
-        windowHeight: content.scrollHeight
-      });
-
-      const imgData = canvas.toDataURL('image/jpeg', 1.0);
-      const pdf = new jsPDF({
-        orientation: 'portrait',
-        unit: 'px',
-        format: [canvas.width / 2, canvas.height / 2]
-      });
-
-      pdf.addImage(imgData, 'JPEG', 0, 0, canvas.width / 2, canvas.height / 2);
-      pdf.save('CV-Fabricio-Montivero.pdf');
+      const docDefinition = buildCvPdfDocument(resumeData, language);
+      await pdfMake.createPdf(docDefinition).download('CV-Fabricio-Montivero.pdf');
     } catch (error) {
       console.error('Error generating PDF:', error);
     } finally {
