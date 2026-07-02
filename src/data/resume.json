@@ -10,8 +10,8 @@
         },
         "birthDate": "1990-03-27",
         "summary": {
-            "es": "Desarrollador Fullstack con experiencia en tecnologías modernas como React, Next.js y Golang, apasionado por crear soluciones eficientes y escalables.",
-            "en": "Fullstack Developer with experience in modern technologies such as React, Next.js and Golang, passionate about creating efficient and scalable solutions."
+            "es": "Desarrollador Fullstack con experiencia en microservicios, Google Cloud y soluciones de salud. Especializado en NestJS, React y el ecosistema Google Workspace, con trayectoria en consultoría técnica y desarrollo de sistemas escalables.",
+            "en": "Fullstack Developer with experience in microservices, Google Cloud, and healthcare solutions. Specialized in NestJS, React, and the Google Workspace ecosystem, with a track record in technical consultancy and scalable system development."
         }
     },
     "skills": {
@@ -62,24 +62,94 @@
         {
             "company": "Set & Forget",
             "role": {
-                "es": "Desarrollador Fullstack",
-                "en": "Fullstack Developer"
+                "es": "Ingeniero de Software Fullstack",
+                "en": "Fullstack Software Engineer"
             },
             "startDate": "2023-02-01",
-            "endDate": "",
+            "endDate": "2026-06-30",
             "description": {
                 "es": [
-                    "Diseñé e implementé soluciones usando AppScript y Google Cloud.",
-                    "Diseñé e implementé soluciones escalables utilizando React y Node.js.",
-                    "Integré APIs RESTful para optimizar la interoperabilidad entre servicios."
+                    "Trabajé en modalidad de consultoría resolviendo desafíos técnicos variados para distintos clientes.",
+                    "Planifiqué y desarrollé desde cero el microservicio médico de un ERP de medicina reproductiva con NestJS, Prisma y PostgreSQL 15.",
+                    "Contribuí en módulos del microservicio contable desarrollado sobre Odoo v18 (Python).",
+                    "Realicé migración masiva de datos del sistema legacy (Escafandra) al nuevo ERP.",
+                    "Integré normativa de salud colombiana: historias clínicas, calendario, RIPS e IHCE/RDA (interoperabilidad Ministerio de Salud)."
                 ],
                 "en": [
-                    "Designed and implemented solutions using AppScript and Google Cloud.",
-                    "Developed scalable solutions using React and Node.js.",
-                    "Integrated RESTful APIs to optimize service interoperability."
+                    "Provided consultancy solving diverse technical challenges across multiple client projects.",
+                    "Planned and built from scratch the medical microservice of a reproductive medicine ERP using NestJS, Prisma, and PostgreSQL 15.",
+                    "Contributed to modules of the accounting microservice built on Odoo v18 (Python).",
+                    "Executed a large-scale data migration from the legacy system (Escafandra) to the new ERP.",
+                    "Integrated Colombian health regulations: clinical records, scheduling, RIPS, and IHCE/RDA (Ministry of Health interoperability)."
                 ]
             },
             "companyLink": "https://www.linkedin.com/company/setandforget/"
+        },
+        {
+            "company": "Hari Tea",
+            "role": {
+                "es": "Desarrollador Freelance",
+                "en": "Freelance Developer"
+            },
+            "startDate": "2025-07-01",
+            "endDate": "2026-05-31",
+            "description": {
+                "es": [
+                    "Consultoría para el desarrollo de herramientas en el ecosistema Google Workspace.",
+                    "Implementé soluciones desde fórmulas de Google Sheets hasta Apps Script desplegado como funciones serverless, add-ons o extensiones.",
+                    "Integré BigQuery como base de datos para persistencia y análisis de datos."
+                ],
+                "en": [
+                    "Consultancy for building tools within the Google Workspace ecosystem.",
+                    "Delivered solutions ranging from Google Sheets formulas to Apps Script deployed as serverless functions, add-ons, or extensions.",
+                    "Integrated BigQuery for data persistence and analytics."
+                ]
+            }
+        },
+        {
+            "company": "Optimize Talent",
+            "role": {
+                "es": "Desarrollador Freelance",
+                "en": "Freelance Developer"
+            },
+            "startDate": "2025-07-22",
+            "endDate": "2025-11-25",
+            "description": {
+                "es": [
+                    "Desarrollé una web app para carga y mapeo de archivos Excel con más de 50.000 filas.",
+                    "Diseñé un flujo de procesamiento temporal por línea para mapeo y transformación de datos antes de confirmar el proceso.",
+                    "Implementé persistencia en BigQuery y notificaciones al completar la transformación.",
+                    "Construí una interfaz para consultar el histórico de transformaciones almacenadas en la base de datos."
+                ],
+                "en": [
+                    "Built a web app to upload and map Excel files with over 50,000 rows.",
+                    "Designed a per-row temporary processing flow for data mapping and transformation before confirmation.",
+                    "Implemented BigQuery persistence and notifications upon process completion.",
+                    "Developed an interface to browse the historical record of stored transformations."
+                ]
+            }
+        },
+        {
+            "company": "TopXGun / Geosistemas",
+            "role": {
+                "es": "Desarrollador Freelance",
+                "en": "Freelance Developer"
+            },
+            "startDate": "2025-08-01",
+            "endDate": "2025-08-31",
+            "description": {
+                "es": [
+                    "Desarrollé el sitio web y e-commerce de drones agrícolas en WordPress a partir de diseño, textos y archivos provistos por el cliente.",
+                    "Implementé el template personalizado y configuré la tienda online.",
+                    "Cargué el contenido de productos y secciones, y realicé el deploy a producción."
+                ],
+                "en": [
+                    "Built the agricultural drone website and e-commerce store on WordPress from client-provided design, copy, and assets.",
+                    "Developed the custom template and configured the online store.",
+                    "Loaded product and section content and deployed the site to production."
+                ]
+            },
+            "companyLink": "https://topxgun.com.ar/"
         }
     ],
     "education": [
@@ -92,6 +162,25 @@
         }
     ],
     "projects": [
+        {
+            "title": {
+                "es": "Chat en tiempo real",
+                "en": "Real-time Chat"
+            },
+            "description": {
+                "es": "Backend self-hosted de chat con API REST y WebSocket, organizaciones/canales, panel de administración, invitaciones y despliegue con Docker.",
+                "en": "Self-hosted chat backend with REST API and WebSocket, organizations/channels, admin panel, invitations, and Docker deployment."
+            },
+            "technologies": [
+                "Go",
+                "SQLite",
+                "WebSocket",
+                "JWT",
+                "Docker"
+            ],
+            "link": "https://github.com/montvlein/cocina-chat-local-server",
+            "deployment": ""
+        },
         {
             "title": {
                 "es": "Catálogo de series y películas",
