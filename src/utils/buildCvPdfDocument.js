@@ -1,3 +1,5 @@
+import { formatExperienceDateRange } from './formatDate';
+
 const LABELS = {
   es: {
     contact: 'CONTACTO',
@@ -17,7 +19,6 @@ const LABELS = {
     linkedin: 'Perfil de LinkedIn',
     github: 'Repositorio GitHub',
     liveDemo: 'Demo en vivo',
-    present: 'Presente',
   },
   en: {
     contact: 'CONTACT',
@@ -37,21 +38,11 @@ const LABELS = {
     linkedin: 'LinkedIn Profile',
     github: 'GitHub Repository',
     liveDemo: 'Live Demo',
-    present: 'Present',
   },
 };
 
 function sectionTitle(text) {
   return { text, style: 'sectionTitle', margin: [0, 10, 0, 4] };
-}
-
-function formatYearRange(startDate, endDate, language) {
-  const start = new Date(startDate).getFullYear();
-  const end = endDate
-    ? new Date(endDate).getFullYear()
-    : LABELS[language].present;
-
-  return `${start} - ${end}`;
 }
 
 function formatCertDate(date, language) {
@@ -125,7 +116,7 @@ function buildExperienceSection(experiences, language, labels) {
             ? { text: experience.company, link: experience.companyLink, style: 'link' }
             : { text: experience.company, style: 'bodySmall' },
           {
-            text: ` | ${formatYearRange(experience.startDate, experience.endDate, language)}`,
+            text: ` | ${formatExperienceDateRange(experience.startDate, experience.endDate, language)}`,
             style: 'bodySmall',
           },
         ],

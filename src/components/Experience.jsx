@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { formatExperienceDateRange } from '../utils/formatDate';
 
 export default function Experience({experiences}) {
   const { language } = useLanguage();
@@ -21,8 +22,7 @@ export default function Experience({experiences}) {
             </a>
             <span className="text-gray-600 dark:text-gray-400">
               {' | '}
-              {new Date(experience.startDate).getFullYear()} - 
-              {experience.endDate ? new Date(experience.endDate).getFullYear() : language === 'en' ? ' Present' : ' Presente'}
+              {formatExperienceDateRange(experience.startDate, experience.endDate, language)}
             </span>
             <ul className="list-disc ml-4 mt-2 text-gray-600 dark:text-gray-300">
               {experience.description[language].map((item, i) => (
