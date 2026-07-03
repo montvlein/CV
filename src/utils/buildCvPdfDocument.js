@@ -249,7 +249,7 @@ export function buildCvPdfDocument(data, language) {
     ...buildExperienceSection(experience, language),
     ...buildSkillsSection(skills, language, labels),
     ...buildCertificationsSection(certifications, language, labels),
-    // ...buildProjectsSection(projects, language, labels),
+    ...buildProjectsSection(projects, language, labels),
   ];
 
   return {
