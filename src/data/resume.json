@@ -17,24 +17,23 @@
     },
     "skills": {
         "programmingLanguages": [
-            "HTML",
-            "CSS",
             "JavaScript",
-            "Java",
-            "Golang",
             "Python",
-            "AppScript"
+            "Golang",
+            "Java",
+            "AppScript",
+            "HTML",
+            "CSS"
         ],
         "frameworksAndLibraries": [
-            "React",
-            "Next.js",
-            "Bootstrap v4",
-            "Tailwind",
-            "Express",
-            "Spring Boot",
             "Nest.js",
             "Prisma",
-            "Fiber"
+            "Fiber",
+            "Express",
+            "React",
+            "Next.js",
+            "Tailwind",
+            "Spring Boot"
         ],
         "toolsAndTechnologies": [
             "Postman",
